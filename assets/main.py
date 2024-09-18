@@ -20,7 +20,7 @@ def clear_link_entry(event):
         video_link.delete(0, "end")
      
 
-video_link = customtkinter.CTkEntry(app,width=400,height=35,font=("Compact" , 14),text_color="blue")
+video_link = customtkinter.CTkEntry(app,width=400,height=35,font=("Compact" , 18),text_color="blue")
 video_link.insert(0,"Вставьте ссылку на видео! ")
 video_link.place(x=80,y=110)
 video_link.bind("<FocusIn>",clear_link_entry)
