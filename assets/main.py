@@ -19,7 +19,7 @@ def clear_link_entry(event):
         link_entry.delete(0, "end")
      
 
-link_entry = customtkinter.CTkEntry(app,width=400,height=35,font=("UBUNTU" , 12),text_color="blue")
+link_entry = customtkinter.CTkEntry(app,width=400,height=35,font=("Compact" , 14),text_color="blue")
 link_entry.insert(0,"Вставьте ссылку на видео! ")
 link_entry.place(x=80,y=110)
 link_entry.bind("<FocusIn>",clear_link_entry)
